@@ -1,9 +1,9 @@
-import HeaderBox from '@/components/HeaderBox'
-import { Pagination } from '@/components/Pagination';
-import TransactionsTable from '@/components/TransactionsTable';
-import { getAccount, getAccounts } from '@/lib/actions/bank.actions';
-import { getLoggedInUser } from '@/lib/actions/user.actions';
-import { formatAmount } from '@/lib/utils';
+import HeaderBox from '@/app/components/HeaderBox'
+import { Pagination } from '@/app/components/Pagination';
+import TransactionsTable from '@/app/components/TransactionsTable';
+import { getAccount, getAccounts } from '@/app/lib/actions/bank.actions';
+import { getLoggedInUser } from '@/app/lib/actions/user.actions';
+import { formatAmount } from '@/app/lib/utils';
 import React from 'react'
 
 const TransactionHistory = async ({ searchParams: { id, page }}:SearchParamProps) => {
